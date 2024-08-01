@@ -2,8 +2,8 @@ name: music-box
 on:
   schedule:
     - cron: '0 * * * *'  # hourly
-  push:
-    branches: master
+  workflow_dispatch:
+  
 jobs:
   musicbox:
    runs-on: ubuntu-latest
